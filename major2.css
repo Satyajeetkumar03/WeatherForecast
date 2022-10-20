@@ -1,0 +1,115 @@
+body{
+
+   background-image: url("weathpic.jpg");
+}
+main{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.day_name{
+    font-size: 30px;
+    color: black;
+}
+.text{
+    font-size: 15px;
+    color: white;
+}
+.weatherforecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 45vh;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+.row1{
+    flex-direction: column;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+.row2{
+    flex-direction: column;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(99, 103, 225, 0.2);
+    border-radius: 10px;
+}
+@media (max-width:400px)
+{   
+    #search{
+        margin-top: 5px;
+        font-size: 15px;   
+        padding: 5px;
+        border-radius:20px; 
+        border: none;
+        outline: none;
+    }
+  main{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.row1{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.row2{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.weatherforecast{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+#search{
+    font-size: 20px;   
+    padding: 5px;
+    border-radius:20px; 
+    align-items:center;
+}
+.week{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color:0px 8px 16px 0px rgba(64, 73, 201, 0.4)
+    border-radius: 10px;
+}
+.weekhover{
+    display: none;
+    font-size: 20px;
+    background-color: rgba(63, 83, 196, 0.2);
+    padding: 20px;
+    box-shadow: 0px 6px 12px 0px rgba(25,25,25,0.3) ;
+    color: white;
+}
+
+.week:hover  .weekhover{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
